@@ -1,0 +1,328 @@
+{
+	"name": "pl_api_banking_raw_to_bronze",
+	"properties": {
+		"activities": [
+			{
+				"name": "copy_api_customer",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "RestSource",
+						"httpRequestTimeout": "00:01:40",
+						"requestInterval": "00.00:00:00.010",
+						"requestMethod": "GET",
+						"paginationRules": {
+							"supportRFC5988": "true"
+						}
+					},
+					"sink": {
+						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['customer_id']"
+								},
+								"sink": {
+									"name": "customer_id"
+								}
+							},
+							{
+								"source": {
+									"path": "$['first_name']"
+								},
+								"sink": {
+									"name": "first_name"
+								}
+							},
+							{
+								"source": {
+									"path": "$['last_name']"
+								},
+								"sink": {
+									"name": "last_name"
+								}
+							},
+							{
+								"source": {
+									"path": "$['gender']"
+								},
+								"sink": {
+									"name": "gender"
+								}
+							},
+							{
+								"source": {
+									"path": "$['date_of_birth']"
+								},
+								"sink": {
+									"name": "date_of_birth"
+								}
+							},
+							{
+								"source": {
+									"path": "$['email']"
+								},
+								"sink": {
+									"name": "email"
+								}
+							},
+							{
+								"source": {
+									"path": "$['phone']"
+								},
+								"sink": {
+									"name": "phone"
+								}
+							},
+							{
+								"source": {
+									"path": "$['pan_number']"
+								},
+								"sink": {
+									"name": "pan_number"
+								}
+							},
+							{
+								"source": {
+									"path": "$['aadhaar_number']"
+								},
+								"sink": {
+									"name": "aadhaar_number"
+								}
+							},
+							{
+								"source": {
+									"path": "$['occupation']"
+								},
+								"sink": {
+									"name": "occupation"
+								}
+							},
+							{
+								"source": {
+									"path": "$['annual_income']"
+								},
+								"sink": {
+									"name": "annual_income"
+								}
+							},
+							{
+								"source": {
+									"path": "$['marital_status']"
+								},
+								"sink": {
+									"name": "marital_status"
+								}
+							},
+							{
+								"source": {
+									"path": "$['customer_since']"
+								},
+								"sink": {
+									"name": "customer_since"
+								}
+							},
+							{
+								"source": {
+									"path": "$['kyc_status']"
+								},
+								"sink": {
+									"name": "kyc_status"
+								}
+							},
+							{
+								"source": {
+									"path": "$['risk_category']"
+								},
+								"sink": {
+									"name": "risk_category"
+								}
+							},
+							{
+								"source": {
+									"path": "$['branch_id']"
+								},
+								"sink": {
+									"name": "branch_id"
+								}
+							},
+							{
+								"source": {
+									"path": "$['city']"
+								},
+								"sink": {
+									"name": "city"
+								}
+							},
+							{
+								"source": {
+									"path": "$['state']"
+								},
+								"sink": {
+									"name": "state"
+								}
+							},
+							{
+								"source": {
+									"path": "$['country']"
+								},
+								"sink": {
+									"name": "country"
+								}
+							},
+							{
+								"source": {
+									"path": "$['customer_status']"
+								},
+								"sink": {
+									"name": "customer_status"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "ls_rest_banking_api_customer",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ds_api_customer_bronze",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "copy_api_loan",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "RestSource",
+						"httpRequestTimeout": "00:01:40",
+						"requestInterval": "00.00:00:00.010",
+						"requestMethod": "GET",
+						"paginationRules": {
+							"supportRFC5988": "true"
+						}
+					},
+					"sink": {
+						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['loan_id']"
+								},
+								"sink": {
+									"name": "loan_id"
+								}
+							},
+							{
+								"source": {
+									"path": "$['customer_id']"
+								},
+								"sink": {
+									"name": "customer_id"
+								}
+							},
+							{
+								"source": {
+									"path": "$['loan_type']"
+								},
+								"sink": {
+									"name": "loan_type"
+								}
+							},
+							{
+								"source": {
+									"path": "$['principal']"
+								},
+								"sink": {
+									"name": "principal"
+								}
+							},
+							{
+								"source": {
+									"path": "$['interest_rate']"
+								},
+								"sink": {
+									"name": "interest_rate"
+								}
+							},
+							{
+								"source": {
+									"path": "$['tenure_months']"
+								},
+								"sink": {
+									"name": "tenure_months"
+								}
+							},
+							{
+								"source": {
+									"path": "$['loan_status']"
+								},
+								"sink": {
+									"name": "loan_status"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "ls_rest_banking_api_loan",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ds_api_loan_bronze",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-09-03T15:37:09Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

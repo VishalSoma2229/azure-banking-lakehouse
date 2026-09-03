@@ -1,0 +1,14 @@
+{
+	"name": "ls_databricks",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-7405617195982968.8.azuredatabricks.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/5a83fd62-b5bd-42a2-bf4b-cb31913a83dc/resourceGroups/rg-banking-de/providers/Microsoft.Databricks/workspaces/banking-lakehouse-db2",
+			"existingClusterId": "0902-185508-3h2jjmoy"
+		}
+	}
+}

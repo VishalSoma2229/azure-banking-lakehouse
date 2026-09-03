@@ -1,0 +1,15 @@
+{
+	"name": "adf-banking-lakehouse-vishal",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6ddea4bf-376d-4133-8cb5-c7f57f3f8578",
+		"tenantId": "b9cc8ec6-697e-47af-a071-c6ef74851ec8"
+	}
+}

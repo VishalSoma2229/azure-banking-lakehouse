@@ -1,0 +1,16 @@
+{
+	"name": "ls_rest_banking_api_customer",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_rest_banking_api_customer",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": "https://banking-api-vishal.azurewebsites.net/customers"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
