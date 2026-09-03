@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-banking-lakehouse-vishal"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://bankingdelakevishal.dfs.core.windows.net/"
+		},
+		"ls_databricks_properties_typeProperties_existingClusterId": {
+			"value": "0902-185508-3h2jjmoy"
+		},
+		"ls_rest_banking_api_properties_typeProperties_url": {
+			"value": "https://banking-api-vishal.azurewebsites.net/"
+		},
+		"ls_rest_banking_api_customer_properties_typeProperties_url": {
+			"value": "https://banking-api-vishal.azurewebsites.net/"
+		}
+	}
+}
