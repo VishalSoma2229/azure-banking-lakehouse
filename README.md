@@ -1,265 +1,179 @@
 # 🏦 Azure Banking Lakehouse
 
-<div align="center">
+<p align="center">
+  <b>End-to-End Azure Banking Data Engineering & Analytics Platform</b>
+</p>
 
-### Production-Inspired Banking Data Engineering & Analytics Platform
-
-Built using **Azure Data Factory • ADLS Gen2 • Azure Databricks • PySpark • Delta Lake • Azure Synapse Analytics • Azure Event Hubs • REST API • Databricks AI/BI**
-
-⭐ If you find this project useful, consider giving it a star.
-
-</div>
-
-<div align="center">
-
-![Azure](https://img.shields.io/badge/Microsoft%20Azure-Cloud-blue?style=for-the-badge&logo=microsoftazure)
-![ADF](https://img.shields.io/badge/Azure%20Data%20Factory-ETL-blue?style=for-the-badge&logo=microsoftazure)
-![ADLS](https://img.shields.io/badge/ADLS%20Gen2-Data%20Lake-blue?style=for-the-badge&logo=microsoftazure)
-![Databricks](https://img.shields.io/badge/Azure%20Databricks-PySpark-red?style=for-the-badge&logo=databricks)
-![PySpark](https://img.shields.io/badge/PySpark-ETL-orange?style=for-the-badge&logo=apachespark)
-![Delta Lake](https://img.shields.io/badge/Delta%20Lake-Storage-red?style=for-the-badge)
-![Synapse](https://img.shields.io/badge/Azure%20Synapse-Analytics-blue?style=for-the-badge&logo=microsoftazure)
-![Event Hubs](https://img.shields.io/badge/Azure%20Event%20Hubs-Streaming-purple?style=for-the-badge&logo=microsoftazure)
-![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-black?style=for-the-badge&logo=github)
-
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Azure-Cloud-blue?logo=microsoftazure" alt="Azure">
+  <img src="https://img.shields.io/badge/ADF-Data%20Integration-orange" alt="Azure Data Factory">
+  <img src="https://img.shields.io/badge/Databricks-PySpark-red?logo=databricks" alt="Databricks">
+  <img src="https://img.shields.io/badge/ADLS%20Gen2-Data%20Lake-blue" alt="ADLS Gen2">
+  <img src="https://img.shields.io/badge/Delta%20Lake-Storage-purple" alt="Delta Lake">
+  <img src="https://img.shields.io/badge/Synapse-Analytics-blue?logo=microsoftazure" alt="Synapse">
+</p>
 
 ---
 
-# 📖 Project Overview
+## 📌 Project Overview
 
-This project implements an end-to-end **Banking Data Lakehouse on Microsoft Azure** using the **Medallion Architecture (Bronze → Silver → Gold)**.
+The **Azure Banking Lakehouse** is an end-to-end cloud data engineering project built on Microsoft Azure.
 
-Banking data is ingested from multiple sources including batch CSV files, REST APIs, and streaming transaction events.
+The platform demonstrates how banking data from multiple sources can be ingested, stored, transformed, governed, and analyzed using modern Azure data engineering services.
 
-The platform uses **Azure Data Factory** for orchestration, **ADLS Gen2** for data lake storage, **Azure Databricks and PySpark** for data transformation, **Azure Synapse Analytics** for SQL analytics, and **Databricks AI/BI** for business dashboards.
-
----
-
-# 🎯 Project Objectives
-
-- Build an end-to-end Azure Data Engineering platform
-- Implement the Bronze → Silver → Gold Medallion Architecture
-- Ingest banking data from batch files, REST APIs, and streaming events
-- Store raw and processed data in ADLS Gen2
-- Perform scalable transformations using PySpark
-- Implement data quality and validation
-- Process transaction events using Azure Event Hubs
-- Orchestrate workflows using Azure Data Factory
-- Create business-ready Gold datasets
-- Expose analytical data through Synapse SQL views
-- Build interactive dashboards using Databricks AI/BI
-- Implement Unity Catalog, Managed Identity, and Azure RBAC
-- Maintain the platform using Git and GitHub
+The solution follows a **Medallion Architecture** with **Bronze, Silver, and Gold** layers and combines batch ingestion, REST API ingestion, and event-stream processing.
 
 ---
 
-# ✨ Features
+## 🎯 Objectives
 
-## Data Engineering
-
-- End-to-End ETL Pipelines
-- Batch CSV Ingestion
-- REST API Ingestion
-- Streaming Transaction Processing
-- Distributed Processing using PySpark
-- Medallion Architecture
-- Delta Lake
-
-## Data Lake
-
-- ADLS Gen2
-- Bronze Layer
-- Silver Layer
-- Gold Layer
-- Raw and Processed Data Separation
-
-## Data Processing
-
-- Schema Enforcement
-- Data Cleaning
-- Data Standardization
-- Duplicate Handling
-- Data Validation
-- Business Transformations
-- Data Quality Checks
-
-## Analytics
-
-- Gold Analytical Datasets
-- Azure Synapse SQL Views
-- Databricks AI/BI Dashboards
-- Transaction Analytics
-- Customer 360
-- Banking KPI Analytics
-- Fraud Analytics
-
-## Orchestration
-
-- Azure Data Factory
-- API → Bronze Pipeline
-- Batch → Bronze Pipeline
-- Bronze → Silver Pipeline
-- Silver → Gold Pipeline
-
-## Security & Governance
-
-- Unity Catalog
-- Managed Identity
-- Azure RBAC
-- Storage Credentials
-- External Locations
+- Build an end-to-end banking data lakehouse on Azure
+- Ingest data from CSV files, REST APIs, and streaming events
+- Store raw and processed data in Azure Data Lake Storage Gen2
+- Implement Bronze, Silver, and Gold data layers
+- Perform data cleansing and transformation using PySpark
+- Implement data quality checks
+- Orchestrate pipelines using Azure Data Factory
+- Use Unity Catalog for Databricks governance
+- Build analytical datasets for banking use cases
+- Create an interactive Databricks AI/BI dashboard
+- Demonstrate real-world cloud data engineering practices
 
 ---
 
-# 🌟 Project Highlights
+## 🚀 Key Features
 
-- 🏦 Banking-focused Azure Lakehouse
-- ☁️ Microsoft Azure cloud architecture
-- 🔄 Batch + REST API + Streaming ingestion
-- 🥉 Bronze → Silver → Gold architecture
-- ⚡ PySpark distributed data processing
-- 🧹 Data quality and validation
-- 📊 Business-ready Gold datasets
-- 🔧 Azure Data Factory orchestration
-- 🗃️ Azure Synapse Analytics
-- 📈 Databricks AI/BI dashboards
-- 🔐 Unity Catalog and Managed Identity
-- 📁 Git-integrated Azure Data Factory artifacts
-- 📸 End-to-end implementation screenshots
-- 🧪 Synthetic banking datasets
+- ✅ Azure Data Lake Storage Gen2
+- ✅ Azure Data Factory orchestration
+- ✅ CSV batch ingestion
+- ✅ REST API ingestion
+- ✅ Azure Event Hubs streaming implementation
+- ✅ Azure Databricks with PySpark
+- ✅ Delta Lake architecture
+- ✅ Bronze → Silver → Gold transformations
+- ✅ Data quality and cleansing
+- ✅ Unity Catalog governance
+- ✅ Azure Synapse analytical views
+- ✅ Databricks AI/BI dashboard
+- ✅ Managed Identity authentication
+- ✅ GitHub-based project organization
 
 ---
 
-# 🏗️ Architecture
+## 🏗️ Architecture
 
 ```text
-                         ┌─────────────────────────┐
-                         │      DATA SOURCES       │
-                         ├─────────────────────────┤
-                         │ CSV Batch Files         │
-                         │ REST APIs               │
-                         │ Event Hubs              │
-                         └────────────┬────────────┘
-                                      │
-                                      ▼
-                         ┌─────────────────────────┐
-                         │   Azure Data Factory     │
-                         │      Orchestration       │
-                         └────────────┬────────────┘
-                                      │
-                                      ▼
-                         ┌─────────────────────────┐
-                         │       ADLS Gen2          │
-                         │      Bronze Layer        │
-                         └────────────┬────────────┘
-                                      │
-                                      ▼
-                         ┌─────────────────────────┐
-                         │    Azure Databricks      │
-                         │        PySpark           │
-                         │   Data Quality / ETL     │
-                         └────────────┬────────────┘
-                                      │
-                                      ▼
-                         ┌─────────────────────────┐
-                         │       Silver Layer       │
-                         │   Cleaned / Validated    │
-                         └────────────┬────────────┘
-                                      │
-                                      ▼
-                         ┌─────────────────────────┐
-                         │        Gold Layer        │
-                         │   Business Analytics     │
-                         └────────────┬────────────┘
-                                      │
-                         ┌────────────┴────────────┐
-                         ▼                         ▼
-                ┌──────────────────┐      ┌──────────────────┐
-                │ Azure Synapse    │      │ Databricks AI/BI │
-                │ SQL Views        │      │ Dashboards       │
-                └──────────────────┘      └──────────────────┘
+                    ┌──────────────────────┐
+                    │     Data Sources     │
+                    ├──────────────────────┤
+                    │ CSV Files             │
+                    │ REST APIs             │
+                    │ Event Hub Events       │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Azure Data Factory   │
+                    │ Ingestion &          │
+                    │ Orchestration        │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+              ┌─────────────────────────────────┐
+              │      ADLS Gen2 - BRONZE         │
+              │        Raw Banking Data         │
+              └────────────────┬────────────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Azure Databricks     │
+                    │ PySpark              │
+                    │ Data Quality          │
+                    │ Transformations       │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+              ┌─────────────────────────────────┐
+              │       ADLS Gen2 - SILVER        │
+              │ Cleaned & Validated Data        │
+              └────────────────┬────────────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Azure Databricks     │
+                    │ Gold Transformations │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+              ┌─────────────────────────────────┐
+              │        ADLS Gen2 - GOLD         │
+              │   Business-Ready Datasets      │
+              └───────────────┬─────────────────┘
+                              │
+                 ┌────────────┴────────────┐
+                 ▼                         ▼
+       ┌──────────────────┐       ┌────────────────────┐
+       │ Azure Synapse    │       │ Databricks AI/BI   │
+       │ Analytical Views │       │ Dashboard          │
+       └──────────────────┘       └────────────────────┘
 ```
 
 ---
 
-# 📊 Medallion Architecture
+## 🥉🥈🥇 Medallion Architecture
 
-The project follows the **Medallion Architecture** to separate raw ingestion, data quality processing, and business analytics.
+### 🥉 Bronze Layer
 
-## 🥉 Bronze Layer
-
-Purpose:
-
-- Store raw ingested data
-- Preserve source data
-- Maintain historical data
-- Minimize business transformations
+Stores raw data with minimal transformation.
 
 Sources include:
 
 - Account
 - Branch
 - Customer
-- Fixed Deposit
+- FD
 - Loan
 - Transaction
-- REST API data
-- Streaming transaction data
 
----
+### 🥈 Silver Layer
 
-## 🥈 Silver Layer
+The Silver layer contains cleaned and validated banking data.
 
-Purpose:
+Transformations include:
 
-- Clean and validate data
-- Standardize schemas
-- Remove duplicates
-- Apply business rules
-- Prepare trusted data for analytics
+- Null handling
+- Duplicate handling
+- Data type standardization
+- Data validation
+- Invalid record removal
+- Business-rule validation
 
-### Customer Data Quality
+Silver notebooks are located in:
 
 ```text
-Bronze Records
-     100,000
-        │
-        ▼
-Data Quality Processing
-        │
-        ▼
-Silver Records
-      96,792
-        │
-        ▼
-Records Removed
-       3,208
+databricks/silver/
 ```
 
----
+### 🥇 Gold Layer
 
-## 🥇 Gold Layer
+The Gold layer contains business-ready analytical datasets.
 
-Purpose:
-
-- Business-ready datasets
-- Analytics optimization
-- Reporting
-- KPI analysis
-- Customer 360
-- Transaction and fraud analytics
-
-Gold datasets include:
+### Gold datasets
 
 - `customer_360`
 - `transaction_summary`
 - `banking_kpi_summary`
 - `account_summary`
 
+Gold notebooks are located in:
+
+```text
+databricks/gold/
+```
+
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 azure-banking-lakehouse/
@@ -270,16 +184,13 @@ azure-banking-lakehouse/
 │
 ├── databricks/
 │   ├── bronze_streaming/
-│   │
 │   ├── dashboards/
 │   │   └── Banking Lakehouse Analytics.lvdash.json
-│   │
 │   ├── gold/
 │   │   ├── account_summary.ipynb
 │   │   ├── banking_kpi_summary.ipynb
 │   │   ├── customer_360.ipynb
 │   │   └── transaction_fraud_analytics.ipynb
-│   │
 │   └── silver/
 │       ├── account_bronze_to_silver.ipynb
 │       ├── branch_bronze_to_silver.ipynb
@@ -289,14 +200,10 @@ azure-banking-lakehouse/
 │       └── transaction_bronze_to_silver.ipynb
 │
 ├── dataset/
-│
 ├── docs/
 │   └── screenshots/
-│
 ├── factory/
-│
 ├── linkedService/
-│
 ├── pipeline/
 │
 ├── streaming/
@@ -304,6 +211,10 @@ azure-banking-lakehouse/
 │
 ├── synapse/
 │   └── views/
+│       ├── vw_account_summary.sql
+│       ├── vw_banking_kpi.sql
+│       ├── vw_customer_360.sql
+│       └── vw_transaction_fraud.sql
 │
 ├── README.md
 └── publish_config.json
@@ -311,288 +222,153 @@ azure-banking-lakehouse/
 
 ---
 
-# ⚙️ Technology Stack
+## 🛠️ Technology Stack
 
-| Category | Technology |
+| Technology | Purpose |
 |---|---|
-| Cloud Platform | Microsoft Azure |
-| Data Lake | Azure Data Lake Storage Gen2 |
-| Orchestration | Azure Data Factory |
-| Data Processing | Azure Databricks |
-| Programming | Python / PySpark |
-| Storage Format | Delta Lake |
-| Streaming | Azure Event Hubs |
-| API Integration | REST API |
-| Analytics | Azure Synapse Analytics |
-| BI | Databricks AI/BI |
-| Governance | Unity Catalog |
-| Identity | Managed Identity / Azure RBAC |
-| Version Control | Git & GitHub |
+| **Azure Data Lake Storage Gen2** | Central cloud data lake |
+| **Azure Data Factory** | Data ingestion and orchestration |
+| **Azure Databricks** | PySpark transformations |
+| **Delta Lake** | Reliable lakehouse storage |
+| **Azure Event Hubs** | Transaction streaming implementation |
+| **Azure Synapse Analytics** | Analytical SQL views |
+| **Unity Catalog** | Databricks governance |
+| **REST API** | Customer and Loan ingestion |
+| **GitHub** | Source control |
 
 ---
 
-# 🔄 End-to-End Pipeline Flow
+## 🔄 End-to-End Data Flow
+
+### 1. Batch Ingestion
+
+CSV datasets are ingested through Azure Data Factory into the Bronze layer.
 
 ```text
-CSV Files ────────────────┐
-                          │
-REST APIs ────────────────┼──► Azure Data Factory
-                          │             │
-Event Hubs ───────────────┘             ▼
-                                  ADLS Gen2
-                                      │
-                                      ▼
-                                   Bronze
-                                      │
-                                      ▼
-                               Azure Databricks
-                                   PySpark
-                                      │
-                                      ▼
-                                   Silver
-                                      │
-                                      ▼
-                                    Gold
-                                  /       \
-                                 /         \
-                                ▼           ▼
-                         Azure Synapse    Databricks
-                          SQL Views         AI/BI
+CSV
+ ↓
+Azure Data Factory
+ ↓
+ADLS Gen2 Bronze
 ```
 
----
+### 2. REST API Ingestion
 
-# 🔧 Azure Data Factory
-
-Azure Data Factory is responsible for ingestion and orchestration.
-
-## Main Pipelines
-
-```text
-pl_api_banking_raw_to_bronze
-pl_batch_banking_raw_to_bronze
-pl_bronze_to_silver
-pl_gold_banking_transformations
-```
-
-## API → Bronze
-
-![ADF API to Bronze](docs/screenshots/01_adf_api_to_bronze.jpg)
-
-## Batch → Bronze
-
-![ADF Batch to Bronze](docs/screenshots/02_adf_batch_to_bronze.jpg)
-
-## Bronze → Silver
-
-![ADF Bronze to Silver](docs/screenshots/03_adf_bronze_to_silver.jpg)
-
-## Silver → Gold
-
-![ADF Silver to Gold](docs/screenshots/04_adf_silver_to_gold.jpg)
-
-[View ADF Pipelines](pipeline/)
-
----
-
-# 🌐 REST API Ingestion
-
-Customer and Loan data are ingested through REST API endpoints and orchestrated using Azure Data Factory.
+Customer and Loan data are retrieved through REST API endpoints and loaded into Bronze.
 
 ```text
 REST API
-   │
-   ▼
+ ↓
 Azure Data Factory
-   │
-   ▼
-ADLS Gen2
-   │
-   ▼
-Bronze Layer
+ ↓
+ADLS Gen2 Bronze
 ```
 
-### API / Swagger
+### 3. Streaming Ingestion
 
-![REST API Swagger](docs/screenshots/08_api_swagger.jpg)
-
-[Open API Screenshot](docs/screenshots/08_api_swagger.jpg)
-
----
-
-# ⚡ Streaming Transaction Pipeline
-
-Transaction data was tested using **Azure Event Hubs** and Databricks Structured Streaming.
+Transaction events were produced and processed through Azure Event Hubs as part of the streaming implementation.
 
 ```text
 Transaction Producer
-        │
-        ▼
+ ↓
 Azure Event Hubs
-        │
-        ▼
-Databricks Structured Streaming
-        │
-        ▼
-ADLS / Delta
-        │
-        ▼
-Silver
-        │
-        ▼
-Gold
+ ↓
+Databricks Streaming
+ ↓
+ADLS Gen2
 ```
 
-The streaming test processed **100,000 transaction events**.
+The Event Hubs resource was used for the streaming implementation/test and is not required to remain deployed.
 
-### Streaming Screenshots
+### 4. Bronze → Silver
 
-![Event Hubs Metrics](docs/screenshots/09_eventhub_metrics.jpg)
+Databricks PySpark notebooks clean and validate the Bronze datasets.
 
-![Streaming Producer](docs/screenshots/10_streaming_producer.jpg)
+```text
+Bronze
+ ↓
+PySpark
+ ↓
+Data Quality
+ ↓
+Silver
+```
 
-![Streaming Processed](docs/screenshots/11_streaming_processed.jpg)
+### 5. Silver → Gold
 
-![Streaming Schema](docs/screenshots/12_streaming_schema.jpg)
+Business transformations create analytical datasets.
 
-[View Streaming Producer](streaming/transaction_producer.py)
+```text
+Silver
+ ↓
+PySpark
+ ↓
+Gold Datasets
+```
 
----
+### 6. Analytics
 
-# 🧠 Azure Databricks
-
-Azure Databricks is used for PySpark-based Silver and Gold transformations.
-
-## Silver Notebooks
-
-- `account_bronze_to_silver`
-- `branch_bronze_to_silver`
-- `customer_bronze_to_silver`
-- `fd_bronze_to_silver`
-- `loan_bronze_to_silver`
-- `transaction_bronze_to_silver`
-
-## Gold Notebooks
-
-- `account_summary`
-- `banking_kpi_summary`
-- `customer_360`
-- `transaction_fraud_analytics`
-
-### Bronze → Silver
-
-![Databricks Bronze to Silver](docs/screenshots/05_databricks_bronze_to_silver.jpg)
-
-### Silver → Gold
-
-![Databricks Silver to Gold](docs/screenshots/06_databricks_silver_to_gold.jpg)
-
-[View Silver Notebooks](databricks/silver/)
-
-[View Gold Notebooks](databricks/gold/)
+Gold datasets are exposed through Synapse analytical views and visualized using Databricks AI/BI dashboards.
 
 ---
 
-# 📊 Databricks AI/BI Dashboard
+## 📊 Data Quality
 
-The Gold layer powers a **Databricks AI/BI dashboard** for business analytics.
+Data quality checks were implemented during Silver transformations.
 
-## Dashboard Includes
+Example results:
 
-- Transaction Trends
-- Credit vs Debit Analysis
-- Transaction Channel Analysis
-- Customer Risk Categories
-- Account Type Distribution
+| Dataset | Bronze Records | Silver Records |
+|---|---:|---:|
+| Customer | 100,000 | 96,792 |
+| Transaction | 100,002 | 100,000 |
+
+The Customer transformation removed invalid records identified during validation.
+
+The Transaction transformation processed 100,000 valid transaction records from the streaming test.
+
+---
+
+## 📈 Analytics
+
+The Gold layer supports banking analytics such as:
+
+- Customer 360 analysis
+- Account summaries
+- Transaction analytics
+- Banking KPI analysis
+- Transaction/fraud-oriented analytics
+- Customer risk analysis
+- Transaction channel analysis
+- Account type analysis
+
+---
+
+## 📊 Databricks AI/BI Dashboard
+
+The project includes an interactive **Databricks AI/BI dashboard** built from the Gold datasets.
+
+Dashboard analysis includes:
+
+- Transaction trends
+- Credit vs Debit transactions
+- Transaction channel distribution
+- Customer risk categories
+- Account type distribution
 - Banking KPIs
 
-## Dashboard Preview
-
-![Databricks Dashboard](docs/screenshots/14_Dashboard_2.jpg)
-
-![Databricks Dashboard Analytics](docs/screenshots/15_Dashboard_2.jpg)
-
-![Customer Risk Analytics](docs/screenshots/16_Dashboard_3.jpg)
-
-![Banking Analytics](docs/screenshots/17_Dashboard_4.jpg)
-
-### Dashboard Definition
-
-[📊 Open Banking Lakehouse Analytics Dashboard](databricks/dashboards/Banking%20Lakehouse%20Analytics.lvdash.json)
-
-### Dashboard Folder
-
-[📁 View Databricks Dashboards](databricks/dashboards/)
-
----
-
-# 🗃️ Azure Synapse Analytics
-
-Azure Synapse provides the SQL analytics layer over the Gold datasets.
-
-## Analytical Views
+Dashboard definition:
 
 ```text
-vw_account_summary.sql
-vw_banking_kpi.sql
-vw_customer_360.sql
-vw_transaction_fraud.sql
+databricks/dashboards/
+└── Banking Lakehouse Analytics.lvdash.json
 ```
 
-### Synapse / ADLS
-
-![Synapse ADLS](docs/screenshots/13_synapse_adls.jpg)
-
-[View Synapse SQL Views](synapse/views/)
-
 ---
 
-# 🗄️ ADLS Gen2
+## 🖼️ Project Screenshots
 
-ADLS Gen2 acts as the central storage layer for the lakehouse.
-
-```text
-ADLS Gen2
-│
-├── Bronze
-│   ├── Account
-│   ├── Branch
-│   ├── Customer
-│   ├── FD
-│   ├── Loan
-│   └── Transaction
-│
-├── Silver
-│   └── Validated Delta Data
-│
-└── Gold
-    └── Business-ready Analytics
-```
-
-### ADLS Structure
-
-![ADLS Bronze Structure](docs/screenshots/07_adls_bronze_structure.jpg)
-
----
-
-# 🔐 Security & Governance
-
-The platform uses Azure-native security and governance capabilities.
-
-- Azure Managed Identity
-- Azure RBAC
-- Databricks Unity Catalog
-- Storage Credentials
-- External Locations
-- Git-based configuration
-
-No production credentials, passwords, access keys, or Event Hubs connection strings are stored in the repository.
-
----
-
-# 📸 Project Screenshots
-
-## Azure Data Factory
+### Azure Data Factory
 
 ![ADF API to Bronze](docs/screenshots/01_adf_api_to_bronze.jpg)
 
@@ -602,25 +378,23 @@ No production credentials, passwords, access keys, or Event Hubs connection stri
 
 ![ADF Silver to Gold](docs/screenshots/04_adf_silver_to_gold.jpg)
 
-## Azure Databricks
+### Azure Databricks
 
 ![Databricks Bronze to Silver](docs/screenshots/05_databricks_bronze_to_silver.jpg)
 
 ![Databricks Silver to Gold](docs/screenshots/06_databricks_silver_to_gold.jpg)
 
-## ADLS Gen2
+### Azure Data Lake Storage
 
 ![ADLS Bronze Structure](docs/screenshots/07_adls_bronze_structure.jpg)
 
-## REST API
+### REST API
 
-![REST API Swagger](docs/screenshots/08_api_swagger.jpg)
+![API Swagger](docs/screenshots/08_api_swagger.jpg)
 
-## Event Hubs
+### Event Streaming
 
-![Event Hubs Metrics](docs/screenshots/09_eventhub_metrics.jpg)
-
-## Streaming
+![Event Hub Metrics](docs/screenshots/09_eventhub_metrics.jpg)
 
 ![Streaming Producer](docs/screenshots/10_streaming_producer.jpg)
 
@@ -628,150 +402,74 @@ No production credentials, passwords, access keys, or Event Hubs connection stri
 
 ![Streaming Schema](docs/screenshots/12_streaming_schema.jpg)
 
-## Azure Synapse
+### Azure Synapse
 
 ![Synapse ADLS](docs/screenshots/13_synapse_adls.jpg)
 
-## Databricks AI/BI
+### Databricks AI/BI Dashboard
 
-![Dashboard 1](docs/screenshots/14_Dashboard_2.jpg)
+![Dashboard](docs/screenshots/14_Dashboard_1.jpg)
 
-![Dashboard 2](docs/screenshots/15_Dashboard_2.jpg)
+![Dashboard](docs/screenshots/15_Dashboard_2.jpg)
 
-![Dashboard 3](docs/screenshots/16_Dashboard_3.jpg)
+![Dashboard](docs/screenshots/16_Dashboard_3.jpg)
 
-![Dashboard 4](docs/screenshots/17_Dashboard_4.jpg)
-
----
-
-# 🔗 Project Resources
-
-| Component | Link |
-|---|---|
-| Databricks Silver | [View Notebooks](databricks/silver/) |
-| Databricks Gold | [View Notebooks](databricks/gold/) |
-| Databricks AI/BI | [View Dashboard](databricks/dashboards/Banking%20Lakehouse%20Analytics.lvdash.json) |
-| ADF Pipelines | [View Pipelines](pipeline/) |
-| ADF Datasets | [View Datasets](dataset/) |
-| ADF Linked Services | [View Linked Services](linkedService/) |
-| Synapse Views | [View SQL Views](synapse/views/) |
-| Streaming | [View Producer](streaming/transaction_producer.py) |
-| Screenshots | [View Screenshots](docs/screenshots/) |
+![Dashboard](docs/screenshots/17_Dashboard_4.jpg)
 
 ---
 
-# 📊 Data Quality
+## 🔐 Security & Governance
 
-The platform applies data quality checks before data reaches the analytical Gold layer.
+The project follows Azure-native security practices.
 
-### Customer Example
-
-```text
-Bronze
-100,000 records
-      │
-      ▼
-Validation & Cleaning
-      │
-      ├──────────────► Invalid / Removed
-      │
-      ▼
-Silver
-96,792 records
-```
-
-Validation includes:
-
-- Null handling
-- Duplicate detection
-- Schema validation
-- Data type validation
-- Business-rule validation
-- Standardization
+- Managed Identity authentication is used for Azure service integration where applicable.
+- Databricks access is configured using Azure identity-based authentication.
+- Unity Catalog is used for Databricks governance.
+- Azure RBAC controls access to Azure resources.
+- No real customer or banking data is used.
+- Secrets and credentials are not stored in the GitHub repository.
+- Streaming connection strings are kept outside the source code through environment-based configuration.
 
 ---
 
-# 🎯 What This Project Demonstrates
+## 📌 Project Highlights
 
-This project demonstrates a complete modern Azure Data Engineering workflow:
+This project demonstrates practical experience with:
 
-```text
-Ingestion
-    ↓
-Orchestration
-    ↓
-ADLS Gen2
-    ↓
-Bronze
-    ↓
-PySpark Processing
-    ↓
-Data Quality
-    ↓
-Silver
-    ↓
-Gold
-    ↓
-┌─────────────────────┐
-│                     │
-▼                     ▼
-Azure Synapse     Databricks AI/BI
-SQL Analytics       Dashboards
-```
-
-### Core Skills Demonstrated
-
-- Azure Data Engineering
-- Data Lakehouse Architecture
-- Batch Processing
-- REST API Integration
-- Streaming Data Engineering
-- PySpark
-- Delta Lake
-- Data Quality
+- Cloud data lake architecture
 - Azure Data Factory
-- Azure Synapse Analytics
-- Databricks AI/BI
-- Unity Catalog
-- Managed Identity
-- Azure RBAC
-- Git and GitHub
+- ADLS Gen2
+- Databricks and PySpark
+- Delta Lake
+- Batch data engineering
+- REST API ingestion
+- Event-driven streaming
+- Data quality engineering
+- Medallion architecture
+- Data governance
+- Analytical data modeling
+- Synapse SQL
+- Databricks AI/BI dashboards
+- Git-based project organization
 
 ---
 
-# 🔐 Data Disclaimer
+## ⚠️ Disclaimer
 
-This project is created for **learning, portfolio, and demonstration purposes**.
+This project uses **synthetic banking data** created for learning and portfolio demonstration purposes.
 
-- All banking data is synthetic.
-- No real customer financial data is used.
-- Raw banking datasets are not included in the public repository.
-- Credentials, passwords, access keys, and connection strings should never be committed.
-- Azure resources may need to be recreated in your own subscription.
-- Event Hubs was used as a temporary streaming test resource.
+No real customer, financial, authentication, or personally identifiable banking information is used.
 
 ---
 
-# 👨‍💻 Author
+## 👤 Author
 
-## Vishal Soma
+**Vishal Soma**
 
-**Azure Data Engineer**
-
-Azure Data Factory • ADLS Gen2 • Databricks • PySpark • Synapse • Data Lakehouse
-
-GitHub:
-
-https://github.com/VishalSoma2229
+Azure Data Engineering Portfolio Project
 
 ---
 
-<div align="center">
-
-### ⭐ If you like this project, please give it a Star!
-
-**Azure Data Engineering • Lakehouse • PySpark • Databricks • Data Factory • Synapse**
-
-Thank you for visiting this repository. 🚀
-
-</div>
+<p align="center">
+  ⭐ If you find this project useful, consider starring the repository!
+</p>
